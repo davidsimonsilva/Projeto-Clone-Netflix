@@ -1,4 +1,4 @@
-const API_KEY = '38c007f28d5b66f36b9c3cf8d8452a4b';
+const API_KEY = '888e61310cb2c9ecdf93ba2b89adb90c';
 const API_BASE = 'https://api.themoviedb.org/3';
 
 /*
@@ -30,42 +30,42 @@ export default {
         return[
           {
             slug: 'originals',
-            tittle: 'Originais do Netflix',
+            title: 'Originais do Netflix',
             items: await basicFetch(`/discover/tv?with_network=213&language=pt-BR&api_key=${API_KEY}`)
           },
           {
             slug: 'trending',
-            tittle: 'Recomendados para Você',
+            title: 'Recomendados para Você',
             items: await basicFetch(`/trending/all/week?language=pt-BR&api_key=${API_KEY}`)
          },
          {
             slug: 'toprated',
-            tittle: 'Em Alta',
+            title: 'Em Alta',
             items: await basicFetch(`/movie/top_rated?language=pt-BR&api_key=${API_KEY}`)
           },
           {
             slug: 'action',
-            tittle: 'Ação',
+            title: 'Ação',
             items: await basicFetch(`/discover/movie?with_genres=28&language=pt-BR&api_key=${API_KEY}`)
          },
          {
             slug: 'Commedy',
-            tittle: 'Comédia',
+            title: 'Comédia',
             items: await basicFetch(`/discover/movie?with_genres=28&language=pt-BR&api_key=${API_KEY}`)
           },
           {
             slug: 'horror',
-            tittle: 'Terror',
+            title: 'Terror',
             items: await basicFetch(`/discover/movie?with_genres=27&language=pt-BR&api_key=${API_KEY}`)
          },
          {
             slug: 'romance',
-            tittle: 'Romance',
+            title: 'Romance',
             items: await basicFetch(`/discover/movie?with_genres=10749&language=pt-BR&api_key=${API_KEY}`)
          },
          {
             slug: 'documentary',
-            tittle: 'Documentários',
+            title: 'Documentários',
             items: await basicFetch(`/discover/movie?with_genres=99&language=pt-BR&api_key=${API_KEY}`)
           },
      ];
