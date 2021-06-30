@@ -66,6 +66,12 @@ useEffect(() => {
             Direitos de imagem para Netflix<br />
             Dados pegos do site Themoviedb.org
           </footer>
+
+          {movieList.length <= 0 &&
+           <div className="loading">
+              <img src="https://blog.ecadauma.com.br/wp-content/uploads/2020/04/netflix-loading.gif" alt="Carregando"/>
+           </div>
+          }
     </div>
   );
 }
