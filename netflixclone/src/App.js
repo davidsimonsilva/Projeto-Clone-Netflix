@@ -60,6 +60,12 @@ useEffect(() => {
           <MovieRow key={key} title={item.title} items={item.items} />
         ))}
       </section>
+
+          <footer className="footer">
+            Feito apenas por aprendizagem pela B7Web<br />
+            Direitos de imagem para Netflix<br />
+            Dados pegos do site Themoviedb.org
+          </footer>
     </div>
   );
 }
